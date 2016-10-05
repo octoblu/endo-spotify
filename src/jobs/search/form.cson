@@ -1,0 +1,8 @@
+{
+  angular: [
+    'data.q'
+    'data.type'
+    'data.limit'
+    'data.offset'
+  ]
+}

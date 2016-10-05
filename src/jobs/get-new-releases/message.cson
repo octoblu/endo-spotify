@@ -1,0 +1,22 @@
+{
+  type: 'object'
+  title: 'Get New Releases'
+  'x-group-name': 'Browse'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      properties:
+        country:
+          type: 'string'
+          title: 'Country'
+          default: 'US'
+        limit:
+          type: 'integer'
+          title: 'Limit'
+          default: 20
+        offset:
+          type: 'integer'
+          title: 'Offset'
+          description: 'Optional'
+}

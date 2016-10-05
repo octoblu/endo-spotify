@@ -1,0 +1,30 @@
+{
+  type: 'object'
+  title: 'Search'
+  'x-group-name': 'General'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      properties:
+        q:
+          type: 'string'
+          title: 'Query'
+        type:
+          type: 'string'
+          title: 'Search Type'
+          enum: [
+            'album'
+            'artist'
+            'playlist'
+            'track'
+          ]
+        limit:
+          type: 'integer'
+          title: 'Limit'
+          default: 20
+        offset:
+          type: 'integer'
+          title: 'Offset'
+          description: 'Optional'
+}

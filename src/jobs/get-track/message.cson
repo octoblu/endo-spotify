@@ -1,0 +1,13 @@
+{
+  type: 'object'
+  title: 'Get Track'
+  'x-group-name': 'Tracks'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      properties:
+        id:
+          type: 'string'
+          title: 'Track ID'
+}

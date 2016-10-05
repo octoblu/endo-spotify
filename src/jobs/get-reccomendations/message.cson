@@ -1,0 +1,168 @@
+{
+  type: 'object'
+  title: 'Get Reccomendation Based on Seeds'
+  'x-group-name': 'Browse'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      properties:
+        limit:
+          type: 'integer'
+          title: 'Limit'
+          default: 20
+        market:
+          type: 'string'
+          title: 'Market Country (i.e. US)'
+          description: 'Optional, leave blank to search all'
+        seed_artists:
+          type: 'string'
+          title: 'Seed Artists'
+          description: 'Comma separated list of Artist Ids'
+        seed_genres:
+          type: 'string'
+          title: 'Seed Genres'
+          description: 'Comma separated list of Genre Ids'
+        seed_tracks:
+          type: 'string'
+          title: 'Seed Tracks'
+          description: 'Comma separated list of Track Ids'
+        min:
+          type: 'object'
+          title: 'Filter by Min'
+          properties:
+            acousticness:
+              type: 'number'
+              description: 'A confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence the track is acoustic.'
+            danceability:
+              type: 'number'
+              description: 'A value of 0.0 is least danceable and 1.0 is most danceable.'
+            duration_ms:
+              type: 'number'
+              description: 'The duration of the track in milliseconds.'
+            energy:
+              type: 'number'
+              description: 'Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity.'
+            instrumentalness:
+              type: 'number'
+              description: 'Predicts whether a track contains no vocals. The closer the instrumentalness value is to 1.0, the greater likelihood the track contains no vocal content. Values above 0.5 are intended to represent instrumental tracks, but confidence is higher as the value approaches 1.0.'
+            key:
+              type: 'number'
+              description: 'The key the track is in. Integers map to pitches using standard Pitch Class notation. E.g. 0 = C, 1 = C♯/D♭, 2 = D, and so on.'
+            liveness:
+              type: 'number'
+              description: 'Detects the presence of an audience in the recording. HA value above 0.8 provides strong likelihood that the track is live.'
+            loudness:
+              type: 'number'
+              description: 'The overall loudness of a track in decibels (dB). Values typical range between -60 and 0 db.'
+            mode:
+              type: 'number'
+              description: 'Mode indicates the modality (major or minor) of a track, the type of scale from which its melodic content is derived. Major is represented by 1 and minor is 0.'
+            popularity:
+              type: 'number'
+              description: 'The popularity of the track. The value will be between 0 and 100, with 100 being the most popular. '
+            speechiness:
+              type: 'number'
+              description: 'Speechiness detects the presence of spoken words in a track. The more exclusively speech-like the recording (e.g. talk show, audio book, poetry), the closer to 1.0 the attribute value. '
+            tempo:
+              type: 'number'
+              description: 'The overall estimated tempo of a track in beats per minute (BPM). '
+            time_signature:
+              type: 'number'
+              description: 'An estimated overall time signature of a track.'
+            valence:
+              type: 'number'
+              description: 'A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).'
+        max:
+          type: 'object'
+          title: 'Filter by Max'
+          properties:
+            acousticness:
+              type: 'number'
+              description: 'A confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence the track is acoustic.'
+            danceability:
+              type: 'number'
+              description: 'A value of 0.0 is least danceable and 1.0 is most danceable.'
+            duration_ms:
+              type: 'number'
+              description: 'The duration of the track in milliseconds.'
+            energy:
+              type: 'number'
+              description: 'Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity.'
+            instrumentalness:
+              type: 'number'
+              description: 'Predicts whether a track contains no vocals. The closer the instrumentalness value is to 1.0, the greater likelihood the track contains no vocal content. Values above 0.5 are intended to represent instrumental tracks, but confidence is higher as the value approaches 1.0.'
+            key:
+              type: 'number'
+              description: 'The key the track is in. Integers map to pitches using standard Pitch Class notation. E.g. 0 = C, 1 = C♯/D♭, 2 = D, and so on.'
+            liveness:
+              type: 'number'
+              description: 'Detects the presence of an audience in the recording. HA value above 0.8 provides strong likelihood that the track is live.'
+            loudness:
+              type: 'number'
+              description: 'The overall loudness of a track in decibels (dB). Values typical range between -60 and 0 db.'
+            mode:
+              type: 'number'
+              description: 'Mode indicates the modality (major or minor) of a track, the type of scale from which its melodic content is derived. Major is represented by 1 and minor is 0.'
+            popularity:
+              type: 'number'
+              description: 'The popularity of the track. The value will be between 0 and 100, with 100 being the most popular. '
+            speechiness:
+              type: 'number'
+              description: 'Speechiness detects the presence of spoken words in a track. The more exclusively speech-like the recording (e.g. talk show, audio book, poetry), the closer to 1.0 the attribute value. '
+            tempo:
+              type: 'number'
+              description: 'The overall estimated tempo of a track in beats per minute (BPM). '
+            time_signature:
+              type: 'number'
+              description: 'An estimated overall time signature of a track.'
+            valence:
+              type: 'number'
+              description: 'A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).'
+        target:
+          type: 'object'
+          title: 'Target'
+          properties:
+            acousticness:
+              type: 'number'
+              description: 'A confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence the track is acoustic.'
+            danceability:
+              type: 'number'
+              description: 'A value of 0.0 is least danceable and 1.0 is most danceable.'
+            duration_ms:
+              type: 'number'
+              description: 'The duration of the track in milliseconds.'
+            energy:
+              type: 'number'
+              description: 'Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity.'
+            instrumentalness:
+              type: 'number'
+              description: 'Predicts whether a track contains no vocals. The closer the instrumentalness value is to 1.0, the greater likelihood the track contains no vocal content. Values above 0.5 are intended to represent instrumental tracks, but confidence is higher as the value approaches 1.0.'
+            key:
+              type: 'number'
+              description: 'The key the track is in. Integers map to pitches using standard Pitch Class notation. E.g. 0 = C, 1 = C♯/D♭, 2 = D, and so on.'
+            liveness:
+              type: 'number'
+              description: 'Detects the presence of an audience in the recording. HA value above 0.8 provides strong likelihood that the track is live.'
+            loudness:
+              type: 'number'
+              description: 'The overall loudness of a track in decibels (dB). Values typical range between -60 and 0 db.'
+            mode:
+              type: 'number'
+              description: 'Mode indicates the modality (major or minor) of a track, the type of scale from which its melodic content is derived. Major is represented by 1 and minor is 0.'
+            popularity:
+              type: 'number'
+              description: 'The popularity of the track. The value will be between 0 and 100, with 100 being the most popular. '
+            speechiness:
+              type: 'number'
+              description: 'Speechiness detects the presence of spoken words in a track. The more exclusively speech-like the recording (e.g. talk show, audio book, poetry), the closer to 1.0 the attribute value. '
+            tempo:
+              type: 'number'
+              description: 'The overall estimated tempo of a track in beats per minute (BPM). '
+            time_signature:
+              type: 'number'
+              description: 'An estimated overall time signature of a track.'
+            valence:
+              type: 'number'
+              description: 'A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).'
+}

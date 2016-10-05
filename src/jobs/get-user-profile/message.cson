@@ -1,0 +1,13 @@
+{
+  type: 'object'
+  title: 'Get User Profile'
+  'x-group-name': 'Profile'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      properties:
+        user_id:
+          type: 'string'
+          title: 'User ID'
+}

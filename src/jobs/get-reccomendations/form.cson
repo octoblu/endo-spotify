@@ -1,0 +1,13 @@
+{
+  angular: [
+    'data.limit'
+    'data.market'
+    'data.offset'
+    'data.seed_artists'
+    'data.seed_genres'
+    'data.seed_tracks'
+    'data.max'
+    'data.min'
+    'data.target'
+  ]
+}
