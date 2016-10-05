@@ -1,0 +1,13 @@
+{
+  type: 'object'
+  title: 'Get User Playlist'
+  'x-group-name': 'Playlists'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      properties:
+        example:
+          type: 'string'
+          title: 'Example'
+}
