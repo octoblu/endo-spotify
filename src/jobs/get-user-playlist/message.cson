@@ -7,7 +7,13 @@
     data:
       type: 'object'
       properties:
-        example:
+        user_id:
           type: 'string'
-          title: 'Example'
+          title: 'User ID'
+        limit:
+          type: 'integer'
+          default: 20
+        offset:
+          type: 'integer'
+          description: 'Optional'
 }

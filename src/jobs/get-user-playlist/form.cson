@@ -1,5 +1,7 @@
 {
   angular: [
-    'data.example'
+    'data.user_id'
+    'data.limit'
+    'data.offset'
   ]
 }
